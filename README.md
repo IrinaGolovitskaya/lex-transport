@@ -14,7 +14,7 @@ The most obvious one would be the key 'piblic transport' and all its values:
  * station 
  * stop_area. 
 
-At this point we have a chance to realize that the most apparant one is not always the best one. Further exporation and comparison with other datasets shows that it contains only bus stops for just a few bus routes ![values public transportation](graphics_readme/public_transport_key.png). 
+At this point we have a chance to realize that the most apparent one is not always the best one. Further exporation and comparison with other datasets shows that it contains only bus stops for just a few bus routes. ![values public transportation](graphics_readme/public_transport_key.png) 
 Although it contains important attributes (such as reference number and names of bus stops), this layer won't be used in the project. 
 Another key to check is 'amenity', as it contains the value 'bus station". Access this data and get the polygon of the central bus station in Lexington and points just around it, which is also not useful for this project. 
 So, the main source of data is the key 'route'. Using Quick quiery in QuickOSM plugin, I accessed the value 'bus' and acquire all the data. I have not chosen any other values, because there is no other public transportation system in Lexington. 
@@ -38,3 +38,18 @@ Monday-Friday the route expands to BlueGrass airport. OSM data contains the shor
 * I did not edit the OSM data to reflect any of temporary detouring or any kind of tempopary changes in schedules listed on Lextran website. 
 
 * There are 4 night routes in Lexington. All of them are excluded from the analysis. As the final map is supposed to be static, not interactive, the night buses, which have different routes from the 'normal' ones, will significantly distort the analysis. 
+
+Thus, I save night buses as a separate geopackage. 
+To filter all routes I use the following SQL expression:
+
+```js
+ "ref"='51' OR "ref"='52' OR "ref"='58'  OR  "ref"='59'  
+``` 
+
+Test shows 4 rows. I save it a separate geopackage in ESPG:3089 / Kentucky Single Zone projection.
+The next is to filter all regular day buses: 
+
+```js
+  NOT ("ref"='51' OR "ref"='52' OR "ref"='58' OR "ref"='59' )
+```
+Test shows 37 rows (it is the right number - some routes consists of several lines). We save that as geopackage as well in ESPG:3089 / Kentucky Single Zone projection, because this is the prepared and filtered for the map data. 
