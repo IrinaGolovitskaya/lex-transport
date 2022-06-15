@@ -96,9 +96,12 @@ Colors used for the map:
 * builings within buffer zones: #4777e7 with the shapeburst fill to give it additional shine
 * buildings outside buffer zones: #585b7d
 
+The same colors I will be using for my web page to create a sense of consistency. 
+
 ### Layout
 
 In the layout I used the saample colors for the title, map details, legend, the scale bar and the north arrow. Lexington's shape is hard to place neatly in most widely known page formats, so I chose to move all additional equipment to the left and zoom in the map itself. 
+Also saved a template for additional maps. 
 
 ### References
 U.S. Department of Transportation oficial website: https://highways.dot.gov
