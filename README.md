@@ -53,3 +53,16 @@ The next is to filter all regular day buses:
   NOT ("ref"='51' OR "ref"='52' OR "ref"='58' OR "ref"='59' )
 ```
 Test shows 37 rows (it is the right number - some routes consists of several lines). We save that as geopackage as well in ESPG:3089 / Kentucky Single Zone projection, because this is the prepared and filtered for the map data. 
+
+Thus, the vector layer, that contains the bus routes is ready for analysis. But it is more appropriate to analyze the accessibility of public transport by buffering from the bus stops - people can only get to the bus at the bus stop, right?
+
+So, according to Open Street Map documentation and quick examination of the attribute tables I have already acquired, there are three possible sources of bus stops points. It is highway, route_bus, amenity and public transport. Filter each point layer, get only bus stops in each one, and then use the Merge vector layer tool (**Vector > Data Management Tools**) to unite all the data in one layer for further analysis. Obtain something like this:
+
+![Bus stops after merging layers](graphics_readme/Bus_stops.png)
+
+It is well-known fact, that public transportation in many American cities leaves much to be desired, but to establish the route without stops is not something one could imagine. The only option available was to georeference lacking data, so I did that with the help of Google Maps XYZ Tiles. After long and boring night get this:
+![Bus stops after georeferencing](graphics_readme/Bus_stops_after.png)
+
+Now all the vector data is ready for the analysis. 
+
+Using Quick Query I also access buildings (all values) and highways (all values). I save it in ESPG:3089 / Kentucky Single Zone projection. 
