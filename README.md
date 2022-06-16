@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-##
+## Step 1. Accessibility
 
 ### Data acquisition
 
@@ -103,7 +103,24 @@ The same colors I will be using for my web page to create a sense of consistency
 In the layout I used the saample colors for the title, map details, legend, the scale bar and the north arrow. Lexington's shape is hard to place neatly in most widely known page formats, so I chose to move all additional equipment to the left and zoom in the map itself. 
 Also saved a template for additional maps. 
 
+## Step 2. Facilities
+
+
+filter both polygon and points layers 
+
+"office" = 'government' OR 'association' 
+
+
+After symbolizing and labeling the new information, I get the picture like that:
+
+![Facilities](graphics_readme/Facilities.png)
+
+But visiting the coroner's office is not the best start of the new life in the city, is it? So, I remove all the information, that is unnessesary, and finally get a map of the state offices and its accessibility by public transport. 
+
+
+
 ### References
+OpenStreetMap Wiki: https://wiki.openstreetmap.org/wiki/Map_features 
 U.S. Department of Transportation oficial website: https://highways.dot.gov
 Pedestrian Safety Guide for Transit Agencies issued by U.S. Department of Transportation: https://safety.fhwa.dot.gov/ped_bike/ped_transit/ped_transguide/ch4.cfm
 Daniels, R., & Mulley, C. (2013). Explaining walking distance to public transport: The dominance of public transport supply. Journal of Transport and Land Use, 6(2), 5–20. http://www.jstor.org/stable/26202654
