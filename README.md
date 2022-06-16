@@ -2,9 +2,29 @@
 
 ## Table of Contents
 
+- [Step 1. Accessibility](##Step-1-Accessibility)
+ - [Data acquisition](###Data-acquisition)
+ - [Analysis](###Analysis)
+ - [Symbology](###Symbology)
+ - [Layout](###Layout)
+- [Step 2. Facilities](##Step-2-Facilities)
+- [Conclusion](##Conclusion-and-general-considerations)
+- [References](##References)
+
+
+## Overview
+
+American cities and United States in general are well-known as a nation with a particular passion to automobiles. It does not nesessarily mean complete abandonement of public trasportation, but sometimes and in some places it may certainly be an issue. Especially it may affect quality of life of people with lower incomes and people who are coming to United States from abroad and may not even have driver's license at all. The rising prices may make a consideration of accessibility of public transportation even more relevant.
+I decided to look at Lexington, KY public transportation system to see if the city in general is well-served and what is actually accessible and what can be done in the future. 
+Last year I came to Lexington as an international student. As a person from abroad you have to visit many different local offices to get your documents done, so I decided to concentrate on accessibility of local offices that I newcomer in Lexington have to visit. 
+
 ## Step 1. Accessibility
 
+But it makes no sense to start with a very specific locations on the map untill we have an overall idea on how well Lexington is served with public transport, and how far we can go in specifying our analysis. 
+
 ### Data acquisition
+
+Of course, at first we have to find (or create) reliable and detailed dataset. 
 
 A quick examination of the [Open Street Map](https://wiki.openstreetmap.org/wiki/Main_Page) map feature documentation gives several possible options of acquiring data.
 The most obvious one would be the key 'piblic transport' and all its values:
@@ -103,21 +123,36 @@ The same colors I will be using for my web page to create a sense of consistency
 In the layout I used the saample colors for the title, map details, legend, the scale bar and the north arrow. Lexington's shape is hard to place neatly in most widely known page formats, so I chose to move all additional equipment to the left and zoom in the map itself. 
 Also saved a template for additional maps. 
 
+![The first map](Lex_transport_buffer_1200px.png)
+
 ## Step 2. Facilities
 
+Now it is time for more detailed analysis. I use OSM to obtain locations of the local offices. I obtain the 'office' key using Quick Query in OSM plugin, then filter both polygon and points layers using the following expression: 
 
-filter both polygon and points layers 
-
+```js
 "office" = 'government' OR 'association' 
-
-
+```
+I actually need both layers, because a certain offices are not duplicated. 
+Then, there are many ways to check if these locations are accessible by public transport (the simplest one is just to look at the map), I used **Vector > Geoprocessing Tools > Intersection**. 
 After symbolizing and labeling the new information, I get the picture like that:
 
 ![Facilities](graphics_readme/Facilities.png)
 
 But visiting the coroner's office is not the best start of the new life in the city, is it? So, I remove all the information, that is unnessesary, and finally get a map of the state offices and its accessibility by public transport. 
 
+![Final map](Lex_offices_1200px.png)
 
+All presented offices are within the 1/4 mile distance, which was defined above as an appropriate distance from the bus stops. 
+
+## Conclusion and general considerations
+
+On the first map we can clearly see that there are entire neighborhoods that are underserved with public transport, and further consideration must be given to it terms if development the public transportation system. 
+Hovewer, the local offices are accessible by public transport, so people who are new to the city and who have no car (in the college town like Lexington it is important) can easily and cheaply reach them.
+
+There are several directions to improve, develope and elaborate this analysis. 
+* Firstly, close examination of the bus routes in Lexington shows, that almost every route has its final destination downtown or close to downtown, it does not go through the entire city. That is why, even if the starting point of one's daily movements and the ending point are both within the walking distance from the bus stop, the whole journey may require one or two changing, which makes public transport intolerable option. The Network analysis on the scale of the entire city may help to bring important discoveries. 
+* Bus schedules may be an issue as well, and in the advanced analysis of public transportation network it must be taken into consideration. 
+* And finally, closer examination of the accessibility of local offices require consideration of the pedestrian infractructure around them. There may be a bus stop nearby, but there may not be a pedestrian lane to the entrance, and that is the issue that people feel, but that is hidden on the small-scale map. 
 
 ### References
 OpenStreetMap Wiki: https://wiki.openstreetmap.org/wiki/Map_features 
