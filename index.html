@@ -2,12 +2,216 @@
 <html>
 
 <head>
+    <meta charset=utf-8 />
+    <title>Public transportation accessibility in Lexington, KY</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #585b7d;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: #3d3d3d;
+      }
+  
+      section {
+        width: 80%;
+        margin: 10px auto;
+      }
+  
+      h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 2.5em;
+        /* The em unit. 2.5x the current size */
+        color: #e8ff91;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+      }
+  
+      h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: #4777e7;
+        font-size: 1.25em;
+        letter-spacing: .04em;
+      }
+  
+      p {
+        font-size: 1em;
+        line-height: 1.8em;
+        letter-spacing: .04em;
+        color: #7a9ef0; 
+      }
+  
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+  
+      a:hover {
+        text-decoration: underline;
+      }
+  
+      ul {
+        padding-left: 20px;
+      }
+  
+      li {
+        margin: 10px 0
+      }
+  
+      #map {
+        width: 100%;
+        margin: 0px auto;
+  
+      }
+  
+      .max-image-width {
+        width: 100%;
+      }
+  
+  
+      .linkbox {
+        margin: 3px 0 20px 0;
+        display: block;
+        font-weight: 300;
+      }
+  
+      hr {
+        border: 0px;
+        border-bottom: 1px solid #3d3d3d;
+        padding-top: 20px;
+      }
+  
+      /* Use float property to make two-column layout. */
+  
+      .first-column {
+        float: left;
+        width: 48%;
+        padding-right: 20px;
+      }
+  
+      .column {
+        float: left;
+        width: 48%;
+      }
+  
+      /* Clear floats after the columns */
+  
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+  
+      /* When browser is 800px wide or less */
+  
+      @media screen and (max-width: 800px) {
+        .first-column,
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
 
-
-    
 </head>
 
 
+<body>
+    <!-- Add map to top of page and make it stretch to fill browser window. -->
+    <img class="max-image-width" src="Lex_transport_buffer_1200px.png">
+  
+    <!-- Create a two column layout for map information. -->
+    <section>
+      <a href='Lex_transport_buffer_8000px.png' class="linkbox">High resolution</a>
+  
+      <h1>Public transportation accessibility in Lexington, KY</h1>
+      <h2>Authored by: Irina Golovitskaya / New Map Plus</h2>
+      <p>Access to public transport can be crucial in maintaining daily activities. It is especcially important for people with lower income, people in difficult life situations or those who are new to the city.
+        There may be fancy new buses with the best AC in the world, and there may be brand new rapid bus lanes, but despite all that, the first and foremost consideration is the density of the routes and proximity to bus stops. 
+        <a href='https://safety.fhwa.dot.gov/ped_bike/ped_transit/ped_transguide/ch4.cfm'>U.S. Department of Transportation</a> suggests 1/4 mile as an optimal distance to the bus stop. 
+        If it requires more to reach the nearest stop, a person will probably want to consider other transportation options. This distance is used to define which areas in the city are served with public transportation in Lexington. 
+        There are many areas in Lexington, which are underserved with public transportation. Understanding of the effects of that on the real life of real people requires more information:
+        who lives in thoses areas, how many public facilities and offices are there and what residents of those neighborhoods want to see around them. We need more data and more focused approach to make sense of the analysis.
+      </p>
+    </section>
+
+    <img class="max-image-width" src="Lex_offices_1200px.png">
+
+    <section>
+      <a href="Lex_offices_8000px.png" class="linkbox">High resolution</a>
+
+      <p>When I came to Lexington as an international student, I had to visit a lot of local offices to get my documents done. It is relevant not only for international students, 
+        but also for all newcomers, who may not have even driver's license. Thus, on the second map 
+
+
+      </p>
+
+    </section>
+
+
+    <section>
+  
+      <div class="row">
+        
+        <!-- First column, the left half -->
+        <div class="first-column">
+          <p>
+          </p>
+      
+        </div>
+        
+        <!-- Second column, the right half -->
+        <div class="column">
+          <!-- Challenge map -->
+          <img class="max-image-width" src="">
+          <p class="linkbox"></p>
+  
+          
+  
+        </div>
+      </div>
+  
+      <div class="row">
+  
+        <div class="first-column"
+        <p> 
+        </p>
+      </div>
+  
+        <div class="column">
+  
+        <!-- Challenge photograph -->
+        <img class="max-image-width" src="">
+        <p class="linkbox"></p>
+  
+      </div>
+    </div>
+  
+      <h3>Map details</h3>
+      <p>© OpenStreetMap contributors
+        <br> Public transportation accessibility in Lexington, KY.
+        <br> Data acquired from OSM. 
+        <br> Software used: QGis 3.20, MacOS Monterey.
+        <br> Coordinate system: ESPG: 3089 / NAD83 / Kentucky Single Zone (ftUS). </p>
+  
+      <p>
+        University of Kentucky New Maps Plus, Spring 2022.
+      </p>
+      <hr>
+      <ul>
+        <li>Visit my Github account <a href='https://github.com/IrinaGolovitskaya'>@IrinaGolovitskaya</a> </li>
+        <li><a href="https://newmapsplus.github.io">New Maps Plus</a></li>
+      </ul>
+    </section>
+  
+  </body>
 
 
 
