@@ -120,7 +120,7 @@ Colors used for the map:
 * buildings within buffer zones: #4777e7 with the shapeburst fill to give it additional shine
 * buildings outside buffer zones: #585b7d
 
-The same colors I will be using for my web page to create a sense of consistency. 
+The same and close colors I will be using for my web page to create a sense of consistency. 
 
 ### Layout
 
