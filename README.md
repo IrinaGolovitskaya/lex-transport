@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-<<<<<<< HEAD
+
 - [Step 1. Accessibility](##step-1-accessibility)
      - [Data acquisition](###data-acquisition)
      - [Analysis](###analysis)
@@ -11,16 +11,7 @@
 - [Step 2. Facilities](##step-2-facilities)
 - [Conclusion](##conclusion-and-general-considerations)
 - [References](##references)
-=======
-- [Step 1. Accessibility](#step-1-accessibility)
-      - [Data acquisition](###Data-acquisition)
-     - [Analysis](###Analysis)
-     - [Symbology](###Symbology)
-     - [Layout](###Layout)
-- [Step 2. Facilities](##Step-2-Facilities)
-- [Conclusion](##Conclusion-and-general-considerations)
-- [References](##References)
->>>>>>> cda4fa6c1a14a47b6b05af26f998ef227915d9a3
+
 
 
 ## Overview
