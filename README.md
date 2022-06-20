@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Step 1. Accessibility](##Step-1-Accessibility)
+- [Step 1. Accessibility](#step-1-accessibility)
       - [Data acquisition](###Data-acquisition)
      - [Analysis](###Analysis)
      - [Symbology](###Symbology)
@@ -16,7 +16,9 @@
 
 American cities and United States in general are well-known as a nation with a particular passion to automobiles. It does not necessarily mean complete abandonment of public transportation, but sometimes and in some places it may certainly be an issue. Especially it may affect quality of life of people with lower incomes and people who are coming to United States from abroad and may not even have driver's license at all. The rising prices may make a consideration of accessibility of public transportation even more relevant.
 I decided to look at Lexington, KY public transportation system to see if the city in general is well-served and what is actually accessible and what can be done in the future. 
-Last year I came to Lexington as an international student. As a person from abroad you have to visit many different local offices to get your documents done, so I decided to concentrate on accessibility of local offices that I newcomer in Lexington have to visit. 
+Last year I came to Lexington as an international student. As a person from abroad you have to visit many different local offices to get your documents done, so I decided to concentrate on accessibility of local offices that I newcomer in Lexington have to visit.
+
+This README.md file describes the process of creating two maps related to bus routes and accessibility in Lexington, KY. You can view the online maps at this <a href="https://irinagolovitskaya.github.io/lex-transport/" target="_blank">GitHub Pages site</a>.
 
 ## Step 1. Accessibility
 
@@ -157,5 +159,7 @@ There are several directions to improve, develop and elaborate this analysis.
 ### References
 OpenStreetMap Wiki: https://wiki.openstreetmap.org/wiki/Map_features 
 U.S. Department of Transportation oficial website: https://highways.dot.gov
+
 Pedestrian Safety Guide for Transit Agencies issued by U.S. Department of Transportation: https://safety.fhwa.dot.gov/ped_bike/ped_transit/ped_transguide/ch4.cfm
+
 Daniels, R., & Mulley, C. (2013). Explaining walking distance to public transport: The dominance of public transport supply. Journal of Transport and Land Use, 6(2), 5–20. http://www.jstor.org/stable/26202654
