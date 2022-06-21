@@ -3,13 +3,13 @@
 ## Table of Contents
 
 
-- [Step 1. Accessibility](##step-1-accessibility)
-     - [Data acquisition](###data-acquisition)
-     - [Analysis](###analysis)
-     - [Symbology](###symbology)
-     - [Layout](###layout)
-- [Step 2. Facilities](##step-2-facilities)
-- [Conclusion](##conclusion-and-general-considerations)
+- [Step 1. Accessibility](#step-1-accessibility)
+     - [Data acquisition](#data-acquisition)
+     - [Analysis](#analysis)
+     - [Symbology](#symbology)
+     - [Layout](#layout)
+- [Step 2. Facilities](#step-2-facilities)
+- [Conclusion](#conclusion-and-general-considerations)
 - [References](##references)
 
 
